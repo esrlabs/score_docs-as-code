@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Testing Statistics &#8212; Score Docs-as-Code  documentation</title>
+    <title>Bazel macro: docs &#8212; Score Docs-as-Code  documentation</title>
   
   
   
@@ -62,7 +62,7 @@
     <script src="../_static/sphinx-needs/libs/html/datatables.min.js?v=8a4aee21"></script>
     <script src="../_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
     <script src="../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'requirements/test_overview';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'reference/bazel_macros';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://esrlabs.github.io/score_docs-as-code/versions.json';
@@ -72,7 +72,8 @@
         </script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Tool Requirements" href="requirements.html" />
+    <link rel="next" title="Concepts" href="../concepts/index.html" />
+    <link rel="prev" title="Commands" href="commands.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.1" />
@@ -158,16 +159,23 @@
 </li>
 
 
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="../internals/index.html">
-    Internals
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
+    Reference
   </a>
 </li>
 
 
-<li class="nav-item current active">
-  <a class="nav-link nav-internal" href="index.html">
-    Requirements
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../concepts/index.html">
+    Concepts
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../internals/index.html">
+    Internals
   </a>
 </li>
 
@@ -287,16 +295,23 @@
 </li>
 
 
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="../internals/index.html">
-    Internals
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
+    Reference
   </a>
 </li>
 
 
-<li class="nav-item current active">
-  <a class="nav-link nav-internal" href="index.html">
-    Requirements
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../concepts/index.html">
+    Concepts
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../internals/index.html">
+    Internals
   </a>
 </li>
 
@@ -364,10 +379,8 @@
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="capabilities.html">Capabilities - A High Level Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="process_overview.html">Process Requirements Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="requirements.html">Tool Requirements</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Testing Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commands.html">Commands</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Bazel macro: <code class="docutils literal notranslate"><span class="pre">docs</span></code></a></li>
 </ul>
 </div>
 </nav></div>
@@ -409,9 +422,9 @@
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Requirements</a></li>
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Reference</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Testing Statistics</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Bazel macro: <code class="docutils literal notranslate"><span class="pre">docs</span></code></span></li>
   </ul>
 </nav>
 </div>
@@ -428,15 +441,54 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="testing-statistics">
-<span id="testing-stats"></span><h1>Testing Statistics<a class="headerlink" href="#testing-statistics" title="Link to this heading">#</a></h1>
-<p class="needs_filter_warning" id="needtable-requirements/test_overview-0">No needs passed the filters</p>
-<p class="needs_filter_warning" id="needtable-requirements/test_overview-1">No needs passed the filters</p>
-<p class="needs_filter_warning" id="needtable-requirements/test_overview-2">No needs passed the filters</p>
-<img alt="../_images/need_pie_d0418.svg" id="needpie-requirements/test_overview-0" src="../_images/need_pie_d0418.svg" />
-<p class="needs_filter_warning" id="needpie-requirements/test_overview-1">No needs passed the filters</p>
-<p class="needs_filter_warning" id="needpie-requirements/test_overview-2">No needs passed the filters</p>
-<p class="needs_filter_warning" id="needpie-requirements/test_overview-3">No needs passed the filters</p>
+  <section id="bazel-macro-docs">
+<span id="bazel-macros"></span><h1>Bazel macro: <code class="docutils literal notranslate"><span class="pre">docs</span></code><a class="headerlink" href="#bazel-macro-docs" title="Link to this heading">#</a></h1>
+<p>The <code class="docutils literal notranslate"><span class="pre">docs</span></code> macro defined in <code class="docutils literal notranslate"><span class="pre">docs.bzl</span></code> is a convenience wrapper
+that creates a small set of Bazel targets
+to build, verify and preview the project’s Sphinx documentation,
+and to create a Python virtual environment for IDE support (Esbonio).</p>
+<p>See <a class="reference internal" href="commands.html"><span class="doc">commands</span></a> for the targets/commands it creates.</p>
+<p>The macro must be called from the repository root package.</p>
+<section id="minimal-example-root-build">
+<h2>Minimal example (root <code class="docutils literal notranslate"><span class="pre">BUILD</span></code>)<a class="headerlink" href="#minimal-example-root-build" title="Link to this heading">#</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;//:docs.bzl&quot;</span><span class="p">,</span> <span class="s2">&quot;docs&quot;</span><span class="p">)</span>
+
+<span class="n">docs</span><span class="p">(</span>
+    <span class="n">source_dir</span> <span class="o">=</span> <span class="s2">&quot;docs&quot;</span><span class="p">,</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="c1"># labels to any extra tools or data you want included</span>
+        <span class="c1"># e.g. &quot;//:needs_json&quot; or other tool targets</span>
+    <span class="p">],</span>
+    <span class="n">deps</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="c1"># additional bazel labels providing Python deps or other runfiles</span>
+    <span class="p">],</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">source_dir</span></code> (string, default: <code class="docutils literal notranslate"><span class="pre">&quot;docs&quot;</span></code>)
+Path (relative to repository root) to your Sphinx source directory. This is the folder
+that contains your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> and the top-level ReST/markdown sources.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">data</span></code> (list of bazel labels)
+Extra runfiles / data targets that should be made available to the documentation targets.
+Typical entries are targets that generate or provide external data used by the docs, for
+example a <code class="docutils literal notranslate"><span class="pre">:needs_json</span></code> producer. The items in <code class="docutils literal notranslate"><span class="pre">data</span></code> are added to the py_binaries and
+to the Sphinx tooling so they are available at build time.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">deps</span></code> (list of bazel labels)
+Additional Bazel dependencies to add to the Python binaries and the virtual environment
+target. Use this to add project-specific Python packages or extension libraries the docs
+build requires.</p></li>
+</ul>
+</section>
+<section id="edge-cases">
+<h2>Edge cases<a class="headerlink" href="#edge-cases" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>If your Sphinx <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> expects files generated by other Bazel targets, make sure those
+targets are included in the <code class="docutils literal notranslate"><span class="pre">data</span></code> list so they are available to the build driver.</p></li>
+<li><p>The experimental “combo” targets rewrite some <code class="docutils literal notranslate"><span class="pre">data</span></code> labels for combined builds; those
+are intended for advanced use and are optional for normal doc workflows.</p></li>
+</ul>
+</section>
 </section>
 
 
@@ -450,13 +502,22 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="requirements.html"
+       href="commands.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Tool Requirements</p>
+        <p class="prev-next-title">Commands</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="../concepts/index.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Concepts</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -470,10 +531,23 @@
 
 
   <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#minimal-example-root-build">Minimal example (root <code class="docutils literal notranslate"><span class="pre">BUILD</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#edge-cases">Edge cases</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/esrlabs/score_docs-as-code/edit/main/docs/requirements/test_overview.rst">
+    <a href="https://github.com/esrlabs/score_docs-as-code/edit/main/docs/reference/bazel_macros.rst">
       <i class="fa-solid fa-pencil"></i>
       
       
@@ -489,7 +563,7 @@
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../_sources/requirements/test_overview.rst.txt"
+      <li><a href="../_sources/reference/bazel_macros.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div></div>
