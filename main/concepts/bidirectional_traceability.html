@@ -33,16 +33,16 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
     <link rel="stylesheet" type="text/css" href="../_static/css/score.css?v=6e51530f" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/score_needs.css?v=e97392eb" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/score_needs.css?v=1f5dae2a" />
     <link rel="stylesheet" type="text/css" href="../_static/css/score_design.css?v=d9fd870c" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/modern.css?v=803738c0" />
   
   <!-- So that users can add custom icons -->
@@ -442,7 +442,7 @@
                 <article class="bd-article">
                   
   <section id="bi-directional-traceability">
-<span id="bidirectional-traceability"></span><h1>Bi-directional Traceability<a class="headerlink" href="#bi-directional-traceability" title="Link to this heading">#</a></h1>
+<span id="docs-bidirectional-traceability"></span><h1>Bi-directional Traceability<a class="headerlink" href="#bi-directional-traceability" title="Link to this heading">#</a></h1>
 <p>The S-CORE project uses a multi-repository layout for source and documentation.
 To satisfy standards such as ASPICE and to support engineers and reviewers, documentation must provide reliable bi-directional traceability between needs, requirements, design artifacts and code.</p>
 <p>Traceability in docs means two things in practice, e.g. if one requirement satisfies another one:</p>
@@ -471,7 +471,7 @@ In a later revision they can update their dependency on the first module and the
 </section>
 <section id="build-with-copies">
 <h3>Build with copies<a class="headerlink" href="#build-with-copies" title="Link to this heading">#</a></h3>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>bazel<span class="w"> </span>run<span class="w"> </span>//:docs_combo_experimental
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>bazel<span class="w"> </span>run<span class="w"> </span>//:docs_combo
 </pre></div>
 </div>
 <p>The documentation build does not depend on the needs.json but on whole documentation source code.</p>

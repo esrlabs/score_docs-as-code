@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Getting started &#8212; Score Docs-as-Code  documentation</title>
+    <title>Use Any Folder for Documentation &#8212; Score Docs-as-Code  documentation</title>
   
   
   
@@ -62,7 +62,7 @@
     <script src="../_static/sphinx-needs/libs/html/datatables.min.js?v=8a4aee21"></script>
     <script src="../_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
     <script src="../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'how-to/get_started';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'how-to/any_folder';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://esrlabs.github.io/score_docs-as-code/versions.json';
@@ -72,8 +72,8 @@
         </script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Setup" href="setup.html" />
-    <link rel="prev" title="How To" href="index.html" />
+    <link rel="next" title="Reference" href="../reference/index.html" />
+    <link rel="prev" title="Add Extensions" href="add_extensions.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.1" />
@@ -379,7 +379,7 @@
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="get_started.html">Getting started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="setup.html">Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="write_docs.html">Write Documentation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
@@ -387,7 +387,7 @@
 <li class="toctree-l1"><a class="reference internal" href="source_to_doc_links.html">Reference Docs in Source Code</a></li>
 <li class="toctree-l1"><a class="reference internal" href="test_to_doc_links.html">Reference Docs in Tests</a></li>
 <li class="toctree-l1"><a class="reference internal" href="add_extensions.html">Add Extensions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="any_folder.html">Use Any Folder for Documentation</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Use Any Folder for Documentation</a></li>
 </ul>
 </div>
 </nav></div>
@@ -431,7 +431,7 @@
     
     <li class="breadcrumb-item"><a href="index.html" class="nav-link">How To</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Getting started</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Use Any Folder for Documentation</span></li>
   </ul>
 </nav>
 </div>
@@ -448,14 +448,28 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="getting-started">
-<h1>Getting started<a class="headerlink" href="#getting-started" title="Link to this heading">#</a></h1>
-<p>In an existing S-CORE repository, you can build the documentation using Bazel:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>bazel<span class="w"> </span>run<span class="w"> </span>//:docs
+  <section id="use-any-folder-for-documentation">
+<h1>Use Any Folder for Documentation<a class="headerlink" href="#use-any-folder-for-documentation" title="Link to this heading">#</a></h1>
+<p>Generally, your documentation must be <code class="docutils literal notranslate"><span class="pre">docs/</span></code>,
+but the RST files for a module may live closer to the code they describe,
+for example in <code class="docutils literal notranslate"><span class="pre">src/my_module/docs/</span></code>.
+You can symlink the folders by adding to your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">score_any_folder_mapping</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;../score/containers/docs&quot;</span><span class="p">:</span> <span class="s2">&quot;component/containers&quot;</span><span class="p">,</span>
+<span class="p">}</span>
 </pre></div>
 </div>
-<p>Open the generated site at <code class="docutils literal notranslate"><span class="pre">_build/index.html</span></code> in your browser.</p>
-<p>In a new S-CORE repository, see <a class="reference internal" href="setup.html#setup"><span class="std std-ref">Setup</span></a>.</p>
+<p>With this configuration, all files in <code class="docutils literal notranslate"><span class="pre">score/containers/docs/</span></code> become available at <code class="docutils literal notranslate"><span class="pre">docs/component/containers/</span></code>.</p>
+<p>If you have <code class="docutils literal notranslate"><span class="pre">docs/component/overview.rst</span></code>, for example,
+you can include the component documentation via <code class="docutils literal notranslate"><span class="pre">toctree</span></code>:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">toctree</span><span class="p">::</span>
+
+   containers/index
+</pre></div>
+</div>
+<p>Only relative links are allowed.</p>
+<p>The symlinks will show up in your sources.
+<strong>Don’t commit the symlinks to git!</strong></p>
 </section>
 
 
@@ -469,20 +483,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="index.html"
+       href="add_extensions.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">How To</p>
+        <p class="prev-next-title">Add Extensions</p>
       </div>
     </a>
     <a class="right-next"
-       href="setup.html"
+       href="../reference/index.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Setup</p>
+        <p class="prev-next-title">Reference</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -501,7 +515,7 @@
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/esrlabs/score_docs-as-code/edit/main/docs/how-to/get_started.rst">
+    <a href="https://github.com/esrlabs/score_docs-as-code/edit/main/docs/how-to/any_folder.rst">
       <i class="fa-solid fa-pencil"></i>
       
       
