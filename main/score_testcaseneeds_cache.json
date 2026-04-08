@@ -150,7 +150,7 @@
     "TestType": "requirements-based",
     "DerivationTechnique": "requirements-analysis",
     "result_text": "",
-    "PartiallyVerifies": "tool_req__docs_metamodel",
+    "PartiallyVerifies": "tool_req__docs_common_attr_security",
     "FullyVerifies": null
   },
   {
@@ -164,7 +164,7 @@
     "TestType": "requirements-based",
     "DerivationTechnique": "requirements-analysis",
     "result_text": "",
-    "PartiallyVerifies": "tool_req__docs_metamodel",
+    "PartiallyVerifies": "tool_req__docs_common_attr_description",
     "FullyVerifies": null
   },
   {
@@ -178,7 +178,7 @@
     "TestType": "requirements-based",
     "DerivationTechnique": "requirements-analysis",
     "result_text": "",
-    "PartiallyVerifies": "tool_req__docs_metamodel",
+    "PartiallyVerifies": "tool_req__docs_common_attr_description",
     "FullyVerifies": null
   },
   {
@@ -192,7 +192,7 @@
     "TestType": "requirements-based",
     "DerivationTechnique": "requirements-analysis",
     "result_text": "",
-    "PartiallyVerifies": "tool_req__docs_metamodel",
+    "PartiallyVerifies": "tool_req__docs_common_attr_description",
     "FullyVerifies": null
   },
   {
@@ -206,7 +206,7 @@
     "TestType": "requirements-based",
     "DerivationTechnique": "requirements-analysis",
     "result_text": "",
-    "PartiallyVerifies": "tool_req__docs_metamodel",
+    "PartiallyVerifies": "tool_req__docs_common_attr_description",
     "FullyVerifies": null
   },
   {
@@ -220,7 +220,7 @@
     "TestType": "requirements-based",
     "DerivationTechnique": "requirements-analysis",
     "result_text": "",
-    "PartiallyVerifies": "tool_req__docs_metamodel",
+    "PartiallyVerifies": "tool_req__docs_common_attr_description",
     "FullyVerifies": null
   }
 ]
