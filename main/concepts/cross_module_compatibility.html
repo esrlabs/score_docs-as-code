@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Internals &#8212; S-CORE Docs-as-Code  documentation</title>
+    <title>Cross-Module Compatibility &#8212; S-CORE Docs-as-Code  documentation</title>
   
   
   
@@ -62,7 +62,7 @@
     <script src="../_static/sphinx-needs/libs/html/datatables.min.js?v=8a4aee21"></script>
     <script src="../_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
     <script src="../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'internals/index';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'concepts/cross_module_compatibility';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.17.0';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://esrlabs.github.io/score_docs-as-code/versions.json';
@@ -73,8 +73,8 @@
     <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Extensions" href="extensions/index.html" />
-    <link rel="prev" title="Documentation bundles and mounts" href="../concepts/mounts/index.html" />
+    <link rel="next" title="Docs Dependencies" href="docs_deps.html" />
+    <link rel="prev" title="Bi-directional Traceability" href="bidirectional_traceability.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -171,15 +171,15 @@
 </li>
 
 
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="../concepts/index.html">
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
     Concepts
   </a>
 </li>
 
 
-<li class="nav-item current active">
-  <a class="nav-link nav-internal" href="#">
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../internals/index.html">
     Internals
   </a>
 </li>
@@ -307,15 +307,15 @@
 </li>
 
 
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="../concepts/index.html">
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
     Concepts
   </a>
 </li>
 
 
-<li class="nav-item current active">
-  <a class="nav-link nav-internal" href="#">
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../internals/index.html">
     Internals
   </a>
 </li>
@@ -390,11 +390,11 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="extensions/index.html">Extensions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="benchmark_results.html">Bazel Mini Benchmark Results</a></li>
-<li class="toctree-l1"><a class="reference internal" href="decisions/index.html">Decisions And Concepts</a></li>
-<li class="toctree-l1"><a class="reference internal" href="requirements/index.html">Requirements</a></li>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="bidirectional_traceability.html">Bi-directional Traceability</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Cross-Module Compatibility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs_deps.html">Docs Dependencies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mounts/index.html">Documentation bundles and mounts</a></li>
 </ul>
 </div>
 </nav></div>
@@ -435,7 +435,10 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Internals</span></li>
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Concepts</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Cross-Module Compatibility</span></li>
   </ul>
 </nav>
 </div>
@@ -452,17 +455,29 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="internals">
-<span id="docs-internals"></span><h1>Internals<a class="headerlink" href="#internals" title="Link to this heading">#</a></h1>
-<p>This section is not relevant for users of docs-as-code but for developers extending or maintaining it.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="extensions/index.html">Extensions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="benchmark_results.html">Bazel Mini Benchmark Results</a></li>
-<li class="toctree-l1"><a class="reference internal" href="decisions/index.html">Decisions And Concepts</a></li>
-<li class="toctree-l1"><a class="reference internal" href="requirements/index.html">Requirements</a></li>
+  <section id="cross-module-compatibility">
+<h1>Cross-Module Compatibility<a class="headerlink" href="#cross-module-compatibility" title="Link to this heading">#</a></h1>
+<p>When documentation bundles from independently released Bazel modules are
+mounted together, the complete build uses one Sphinx-Needs and metamodel
+baseline. A supplier can therefore be valid on its own release baseline while
+an integrated build detects a newer requirement.</p>
+<p>Docs-as-code keeps standalone builds strict. Cross-module compatibility is also
+strict by default: no finding is downgraded unless its category is enabled
+explicitly in <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>.</p>
+<section id="scope-of-compatibility-allowances">
+<h2>Scope of Compatibility Allowances<a class="headerlink" href="#scope-of-compatibility-allowances" title="Link to this heading">#</a></h2>
+<p>Each allowance applies only to needs owned by mounted or imported modules. It
+can downgrade these findings:</p>
+<ul class="simple">
+<li><p>missing mandatory attributes;</p></li>
+<li><p>missing mandatory links; and</p></li>
+<li><p>an exact need-link version condition such as <code class="docutils literal notranslate"><span class="pre">target[version==1]</span></code> that does
+not match when at least one link endpoint is external.</p></li>
 </ul>
-</div>
+<p>All other metamodel findings, all-local links, and every malformed or failed
+Sphinx-Needs link condition remain fatal. An allowance makes an integration
+possible during version skew; it does not make the underlying mismatch valid.</p>
+</section>
 </section>
 
 
@@ -476,20 +491,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../concepts/mounts/index.html"
+       href="bidirectional_traceability.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Documentation bundles and mounts</p>
+        <p class="prev-next-title">Bi-directional Traceability</p>
       </div>
     </a>
     <a class="right-next"
-       href="extensions/index.html"
+       href="docs_deps.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Extensions</p>
+        <p class="prev-next-title">Docs Dependencies</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -505,10 +520,22 @@
 
 
   <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scope-of-compatibility-allowances">Scope of Compatibility Allowances</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/esrlabs/score_docs-as-code/edit/main//home/runner/work/score_docs-as-code/score_docs-as-code/docs/internals/index.rst">
+    <a href="https://github.com/esrlabs/score_docs-as-code/edit/main//home/runner/work/score_docs-as-code/score_docs-as-code/docs/concepts/cross_module_compatibility.rst">
       <i class="fa-solid fa-pencil"></i>
       
       
