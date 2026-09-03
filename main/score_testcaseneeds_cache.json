@@ -2646,6 +2646,48 @@
     "FullyVerifies": null
   },
   {
+    "name": "test_excludes__test_nested_mount_pattern_only_matches_descendants",
+    "file": "src/extensions/score_mounts/tests/test_excludes.py",
+    "line": "30",
+    "result": "passed",
+    "repo_name": null,
+    "hash": null,
+    "url": null,
+    "TestType": null,
+    "DerivationTechnique": null,
+    "result_text": "",
+    "PartiallyVerifies": null,
+    "FullyVerifies": null
+  },
+  {
+    "name": "test_excludes__test_mount_exclusions_calculate_primary_and_nested_boundaries",
+    "file": "src/extensions/score_mounts/tests/test_excludes.py",
+    "line": "39",
+    "result": "passed",
+    "repo_name": null,
+    "hash": null,
+    "url": null,
+    "TestType": null,
+    "DerivationTechnique": null,
+    "result_text": "",
+    "PartiallyVerifies": null,
+    "FullyVerifies": null
+  },
+  {
+    "name": "test_excludes__test_mount_entry_serializes_child_exclusions",
+    "file": "src/extensions/score_mounts/tests/test_excludes.py",
+    "line": "59",
+    "result": "passed",
+    "repo_name": null,
+    "hash": null,
+    "url": null,
+    "TestType": null,
+    "DerivationTechnique": null,
+    "result_text": "",
+    "PartiallyVerifies": null,
+    "FullyVerifies": null
+  },
+  {
     "name": "test_resolver__test_load_single_entry",
     "file": "src/extensions/score_mounts/tests/test_resolver.py",
     "line": "39",
