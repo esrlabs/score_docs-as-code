@@ -1610,22 +1610,8 @@
     "FullyVerifies": null
   },
   {
-    "name": "test_rules_file_based__test_rst_files[attributes/test_validity.rst]",
-    "file": "src/extensions/score_metamodel/tests/rst/attributes/test_validity.rst",
-    "line": "16",
-    "result": "passed",
-    "repo_name": "local_repo",
-    "hash": "",
-    "url": "",
-    "TestType": "requirements_based",
-    "DerivationTechnique": "requirements_based",
-    "result_text": "",
-    "PartiallyVerifies": "tool_req__docs_sec_attr_stride_threat_id, tool_req__docs_sec_attrs_mandatory",
-    "FullyVerifies": null
-  },
-  {
-    "name": "test_rules_file_based__test_rst_files[attributes/test_attributes_external_prefix.rst]",
-    "file": "src/extensions/score_metamodel/tests/rst/attributes/test_attributes_external_prefix.rst",
+    "name": "test_rules_file_based__test_rst_files[attributes/test_attributes_format_id_format.rst]",
+    "file": "src/extensions/score_metamodel/tests/rst/attributes/test_attributes_format_id_format.rst",
     "line": "16",
     "result": "passed",
     "repo_name": "local_repo",
@@ -1635,20 +1621,6 @@
     "DerivationTechnique": "requirements_based",
     "result_text": "",
     "PartiallyVerifies": "tool_req__docs_common_attr_id_scheme",
-    "FullyVerifies": null
-  },
-  {
-    "name": "test_rules_file_based__test_rst_files[attributes/test_prohibited_words.rst]",
-    "file": "src/extensions/score_metamodel/tests/rst/attributes/test_prohibited_words.rst",
-    "line": "17",
-    "result": "passed",
-    "repo_name": "local_repo",
-    "hash": "",
-    "url": "",
-    "TestType": "requirements_based",
-    "DerivationTechnique": "requirements_based",
-    "result_text": "",
-    "PartiallyVerifies": "tool_req__docs_common_attr_title, tool_req__docs_common_attr_desc_wording",
     "FullyVerifies": null
   },
   {
@@ -1666,8 +1638,36 @@
     "FullyVerifies": "tool_req__docs_stdreq_types[version==1], tool_req__docs_stdwp_types[version==1]"
   },
   {
-    "name": "test_rules_file_based__test_rst_files[attributes/test_attributes_format_id_format.rst]",
-    "file": "src/extensions/score_metamodel/tests/rst/attributes/test_attributes_format_id_format.rst",
+    "name": "test_rules_file_based__test_rst_files[attributes/test_prohibited_words.rst]",
+    "file": "src/extensions/score_metamodel/tests/rst/attributes/test_prohibited_words.rst",
+    "line": "17",
+    "result": "passed",
+    "repo_name": "local_repo",
+    "hash": "",
+    "url": "",
+    "TestType": "requirements_based",
+    "DerivationTechnique": "requirements_based",
+    "result_text": "",
+    "PartiallyVerifies": "tool_req__docs_common_attr_title, tool_req__docs_common_attr_desc_wording",
+    "FullyVerifies": null
+  },
+  {
+    "name": "test_rules_file_based__test_rst_files[attributes/test_validity.rst]",
+    "file": "src/extensions/score_metamodel/tests/rst/attributes/test_validity.rst",
+    "line": "16",
+    "result": "passed",
+    "repo_name": "local_repo",
+    "hash": "",
+    "url": "",
+    "TestType": "requirements_based",
+    "DerivationTechnique": "requirements_based",
+    "result_text": "",
+    "PartiallyVerifies": "tool_req__docs_sec_attr_stride_threat_id, tool_req__docs_sec_attrs_mandatory",
+    "FullyVerifies": null
+  },
+  {
+    "name": "test_rules_file_based__test_rst_files[attributes/test_attributes_external_prefix.rst]",
+    "file": "src/extensions/score_metamodel/tests/rst/attributes/test_attributes_external_prefix.rst",
     "line": "16",
     "result": "passed",
     "repo_name": "local_repo",
@@ -1764,20 +1764,6 @@
     "FullyVerifies": null
   },
   {
-    "name": "test_rules_file_based__test_rst_files[safety/test_saf_mandatory_attrs.rst]",
-    "file": "src/extensions/score_metamodel/tests/rst/safety/test_saf_mandatory_attrs.rst",
-    "line": "16",
-    "result": "passed",
-    "repo_name": "local_repo",
-    "hash": "",
-    "url": "",
-    "TestType": "requirements_based",
-    "DerivationTechnique": "requirements_based",
-    "result_text": "",
-    "PartiallyVerifies": "tool_req__docs_saf_attrs_mandatory[version==1]",
-    "FullyVerifies": "tool_req__docs_saf_attr_dfa_failure_id[version==2], tool_req__docs_saf_attr_fmea_fault_id[version==2], tool_req__docs_saf_attrs_sufficient[version==1], tool_req__docs_saf_attrs_content[version==2]"
-  },
-  {
     "name": "test_rules_file_based__test_rst_files[safety/test_saf_types.rst]",
     "file": "src/extensions/score_metamodel/tests/rst/safety/test_saf_types.rst",
     "line": "15",
@@ -1804,6 +1790,20 @@
     "result_text": "",
     "PartiallyVerifies": null,
     "FullyVerifies": "tool_req__docs_saf_attrs_mitigation_issue[version==1], tool_req__docs_saf_attrs_safety_relevant[version==1], tool_req__docs_saf_attrs_root_cause[version==1]"
+  },
+  {
+    "name": "test_rules_file_based__test_rst_files[safety/test_saf_mandatory_attrs.rst]",
+    "file": "src/extensions/score_metamodel/tests/rst/safety/test_saf_mandatory_attrs.rst",
+    "line": "16",
+    "result": "passed",
+    "repo_name": "local_repo",
+    "hash": "",
+    "url": "",
+    "TestType": "requirements_based",
+    "DerivationTechnique": "requirements_based",
+    "result_text": "",
+    "PartiallyVerifies": "tool_req__docs_saf_attrs_mandatory[version==1]",
+    "FullyVerifies": "tool_req__docs_saf_attr_dfa_failure_id[version==2], tool_req__docs_saf_attr_fmea_fault_id[version==2], tool_req__docs_saf_attrs_sufficient[version==1], tool_req__docs_saf_attrs_content[version==2]"
   },
   {
     "name": "test_rules_file_based__test_rst_files[safety/test_saf_violates.rst]",
@@ -1862,7 +1862,21 @@
     "FullyVerifies": null
   },
   {
-    "name": "test_rules_file_based__test_rst_files[options/test_dec_rec.rst]",
+    "name": "test_rules_file_based__test_rst_files[options/wp_comp.rst]",
+    "file": "src/extensions/score_metamodel/tests/rst/options/wp_comp.rst",
+    "line": "16",
+    "result": "passed",
+    "repo_name": "local_repo",
+    "hash": "",
+    "url": "",
+    "TestType": "requirements_based",
+    "DerivationTechnique": "requirements_based",
+    "result_text": "",
+    "PartiallyVerifies": null,
+    "FullyVerifies": "tool_req__docs_stdwp_types[version==1], tool_req__docs_wp_types[version==1]"
+  },
+  {
+    "name": "test_rules_file_based__test_rst_files[options/test_need_extends.rst]",
     "file": "src/extensions/score_metamodel/tests/rst/docname.rst",
     "line": "42",
     "result": "passed",
@@ -1876,7 +1890,7 @@
     "FullyVerifies": null
   },
   {
-    "name": "test_rules_file_based__test_rst_files[options/test_options_verification_report.rst]",
+    "name": "test_rules_file_based__test_rst_files[options/test_dec_rec.rst]",
     "file": "src/extensions/score_metamodel/tests/rst/docname.rst",
     "line": "42",
     "result": "passed",
@@ -1904,32 +1918,18 @@
     "FullyVerifies": null
   },
   {
-    "name": "test_rules_file_based__test_rst_files[options/wp_comp.rst]",
-    "file": "src/extensions/score_metamodel/tests/rst/options/wp_comp.rst",
-    "line": "16",
+    "name": "test_rules_file_based__test_rst_files[options/test_options_verification_report.rst]",
+    "file": "src/extensions/score_metamodel/tests/rst/docname.rst",
+    "line": "42",
     "result": "passed",
-    "repo_name": "local_repo",
-    "hash": "",
-    "url": "",
-    "TestType": "requirements_based",
-    "DerivationTechnique": "requirements_based",
+    "repo_name": null,
+    "hash": null,
+    "url": null,
+    "TestType": null,
+    "DerivationTechnique": null,
     "result_text": "",
     "PartiallyVerifies": null,
-    "FullyVerifies": "tool_req__docs_stdwp_types[version==1], tool_req__docs_wp_types[version==1]"
-  },
-  {
-    "name": "test_rules_file_based__test_rst_files[options/test_options_failure_effect.rst]",
-    "file": "src/extensions/score_metamodel/tests/rst/options/test_options_failure_effect.rst",
-    "line": "16",
-    "result": "passed",
-    "repo_name": "local_repo",
-    "hash": "",
-    "url": "",
-    "TestType": "requirements_based",
-    "DerivationTechnique": "requirements_based",
-    "result_text": "",
-    "PartiallyVerifies": null,
-    "FullyVerifies": "tool_req__docs_saf_attr_fmea_failure_effect[version==1]"
+    "FullyVerifies": null
   },
   {
     "name": "test_rules_file_based__test_rst_files[options/test_options_extra_option.rst]",
@@ -1946,18 +1946,18 @@
     "FullyVerifies": null
   },
   {
-    "name": "test_rules_file_based__test_rst_files[options/test_need_extends.rst]",
-    "file": "src/extensions/score_metamodel/tests/rst/docname.rst",
-    "line": "42",
+    "name": "test_rules_file_based__test_rst_files[options/test_options_failure_effect.rst]",
+    "file": "src/extensions/score_metamodel/tests/rst/options/test_options_failure_effect.rst",
+    "line": "16",
     "result": "passed",
-    "repo_name": null,
-    "hash": null,
-    "url": null,
-    "TestType": null,
-    "DerivationTechnique": null,
+    "repo_name": "local_repo",
+    "hash": "",
+    "url": "",
+    "TestType": "requirements_based",
+    "DerivationTechnique": "requirements_based",
     "result_text": "",
     "PartiallyVerifies": null,
-    "FullyVerifies": null
+    "FullyVerifies": "tool_req__docs_saf_attr_fmea_failure_effect[version==1]"
   },
   {
     "name": "test_rules_file_based__test_rst_files[options/test_options_options.rst]",
@@ -3320,7 +3320,7 @@
   {
     "name": "test_codelink__test_need",
     "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
-    "line": "62",
+    "line": "63",
     "result": "passed",
     "repo_name": null,
     "hash": null,
@@ -3334,7 +3334,7 @@
   {
     "name": "test_codelink__test_get_cache_filename",
     "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
-    "line": "269",
+    "line": "270",
     "result": "passed",
     "repo_name": null,
     "hash": null,
@@ -3348,7 +3348,7 @@
   {
     "name": "test_codelink__test_find_need_direct_match",
     "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
-    "line": "284",
+    "line": "285",
     "result": "passed",
     "repo_name": null,
     "hash": null,
@@ -3362,7 +3362,7 @@
   {
     "name": "test_codelink__test_find_need_not_found",
     "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
-    "line": "297",
+    "line": "298",
     "result": "passed",
     "repo_name": null,
     "hash": null,
@@ -3376,7 +3376,7 @@
   {
     "name": "test_codelink__test_group_by_need",
     "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
-    "line": "309",
+    "line": "310",
     "result": "passed",
     "repo_name": null,
     "hash": null,
@@ -3390,7 +3390,7 @@
   {
     "name": "test_codelink__test_group_by_need_empty_list",
     "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
-    "line": "328",
+    "line": "329",
     "result": "passed",
     "repo_name": null,
     "hash": null,
@@ -3404,7 +3404,35 @@
   {
     "name": "test_codelink__test_cache_file_operations",
     "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
-    "line": "334",
+    "line": "335",
+    "result": "passed",
+    "repo_name": null,
+    "hash": null,
+    "url": null,
+    "TestType": null,
+    "DerivationTechnique": null,
+    "result_text": "",
+    "PartiallyVerifies": null,
+    "FullyVerifies": null
+  },
+  {
+    "name": "test_codelink__test_combining_without_source_links_continues_with_empty_code_links",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "line": "361",
+    "result": "passed",
+    "repo_name": null,
+    "hash": null,
+    "url": null,
+    "TestType": null,
+    "DerivationTechnique": null,
+    "result_text": "",
+    "PartiallyVerifies": null,
+    "FullyVerifies": null
+  },
+  {
+    "name": "test_codelink__test_combining_with_missing_source_links_reports_configured_path",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "line": "373",
     "result": "passed",
     "repo_name": null,
     "hash": null,
@@ -3418,7 +3446,7 @@
   {
     "name": "test_codelink__test_cache_file_with_encoded_comments",
     "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
-    "line": "360",
+    "line": "389",
     "result": "passed",
     "repo_name": null,
     "hash": null,
@@ -3432,7 +3460,7 @@
   {
     "name": "test_codelink__test_group_by_need_and_find_need_integration",
     "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
-    "line": "392",
+    "line": "421",
     "result": "passed",
     "repo_name": null,
     "hash": null,
@@ -3446,7 +3474,7 @@
   {
     "name": "test_codelink__test_source_linker_end_to_end_with_real_files",
     "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
-    "line": "415",
+    "line": "444",
     "result": "passed",
     "repo_name": null,
     "hash": null,
@@ -3460,7 +3488,7 @@
   {
     "name": "test_codelink__test_multiple_commits_hash_consistency",
     "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
-    "line": "515",
+    "line": "544",
     "result": "passed",
     "repo_name": null,
     "hash": null,
@@ -3474,7 +3502,7 @@
   {
     "name": "test_codelink__test_is_metadata_missing_keys",
     "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
-    "line": "549",
+    "line": "578",
     "result": "passed",
     "repo_name": null,
     "hash": null,
@@ -3488,7 +3516,7 @@
   {
     "name": "test_codelink__test_needlink_to_dict_without_metadata",
     "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
-    "line": "558",
+    "line": "587",
     "result": "passed",
     "repo_name": null,
     "hash": null,
@@ -3502,7 +3530,7 @@
   {
     "name": "test_codelink__test_needlink_to_dict_full",
     "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
-    "line": "579",
+    "line": "608",
     "result": "passed",
     "repo_name": null,
     "hash": null,
@@ -3516,7 +3544,7 @@
   {
     "name": "test_codelink__test_needlink_encoder_includes_metadata",
     "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
-    "line": "602",
+    "line": "631",
     "result": "passed",
     "repo_name": null,
     "hash": null,
@@ -3530,7 +3558,7 @@
   {
     "name": "test_codelink__test_needlink_decoder_with_all_fields",
     "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
-    "line": "628",
+    "line": "657",
     "result": "passed",
     "repo_name": null,
     "hash": null,
@@ -3544,7 +3572,7 @@
   {
     "name": "test_codelink__test_needlink_decoder_non_needlink_dict",
     "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
-    "line": "648",
+    "line": "677",
     "result": "passed",
     "repo_name": null,
     "hash": null,
@@ -3558,7 +3586,7 @@
   {
     "name": "test_codelink__test_load_validates_list_type",
     "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
-    "line": "658",
+    "line": "687",
     "result": "passed",
     "repo_name": null,
     "hash": null,
@@ -3572,7 +3600,7 @@
   {
     "name": "test_codelink__test_load_validates_all_items_are_needlinks",
     "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
-    "line": "667",
+    "line": "696",
     "result": "passed",
     "repo_name": null,
     "hash": null,
@@ -3586,7 +3614,7 @@
   {
     "name": "test_codelink__test_store_and_load_with_metadata",
     "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
-    "line": "679",
+    "line": "708",
     "result": "passed",
     "repo_name": null,
     "hash": null,
@@ -3600,7 +3628,7 @@
   {
     "name": "test_codelink__test_load_with_metadata_missing_metadata_dict",
     "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
-    "line": "721",
+    "line": "750",
     "result": "passed",
     "repo_name": null,
     "hash": null,
@@ -3614,7 +3642,7 @@
   {
     "name": "test_codelink__test_load_with_metadata_invalid_items_after_metadata",
     "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
-    "line": "745",
+    "line": "774",
     "result": "passed",
     "repo_name": null,
     "hash": null,
@@ -3628,7 +3656,7 @@
   {
     "name": "test_codelink__test_load_resolves_relative_path_with_env_var",
     "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
-    "line": "762",
+    "line": "791",
     "result": "passed",
     "repo_name": null,
     "hash": null,
@@ -3642,7 +3670,7 @@
   {
     "name": "test_codelink__test_load_with_metadata_resolves_relative_path",
     "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
-    "line": "791",
+    "line": "820",
     "result": "passed",
     "repo_name": null,
     "hash": null,
@@ -3656,7 +3684,7 @@
   {
     "name": "test_codelink__test_roundtrip_standard_format",
     "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
-    "line": "826",
+    "line": "855",
     "result": "passed",
     "repo_name": null,
     "hash": null,
@@ -3670,7 +3698,7 @@
   {
     "name": "test_codelink__test_roundtrip_metadata_format_applies_metadata",
     "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
-    "line": "861",
+    "line": "890",
     "result": "passed",
     "repo_name": null,
     "hash": null,
@@ -3684,7 +3712,7 @@
   {
     "name": "test_codelink__test_roundtrip_empty_lists",
     "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
-    "line": "897",
+    "line": "926",
     "result": "passed",
     "repo_name": null,
     "hash": null,
@@ -3698,7 +3726,7 @@
   {
     "name": "test_codelink__test_json_format_with_metadata_has_separate_dict",
     "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
-    "line": "909",
+    "line": "938",
     "result": "passed",
     "repo_name": null,
     "hash": null,
@@ -3712,7 +3740,7 @@
   {
     "name": "test_codelink__test_needlink_equality_same_values",
     "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
-    "line": "941",
+    "line": "970",
     "result": "passed",
     "repo_name": null,
     "hash": null,
@@ -3726,7 +3754,7 @@
   {
     "name": "test_codelink__test_needlink_inequality_different_values",
     "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
-    "line": "968",
+    "line": "997",
     "result": "passed",
     "repo_name": null,
     "hash": null,
@@ -4090,7 +4118,7 @@
   {
     "name": "test_repo_source_link_integration__test_repo_grouped_cache_generated",
     "file": "src/extensions/score_source_code_linker/tests/test_repo_source_link_integration.py",
-    "line": "240",
+    "line": "291",
     "result": "passed",
     "repo_name": null,
     "hash": null,
@@ -4104,7 +4132,7 @@
   {
     "name": "test_repo_source_link_integration__test_repo_grouping_preserves_metadata",
     "file": "src/extensions/score_source_code_linker/tests/test_repo_source_link_integration.py",
-    "line": "271",
+    "line": "322",
     "result": "passed",
     "repo_name": null,
     "hash": null,
@@ -4118,7 +4146,7 @@
   {
     "name": "test_repo_source_link_integration__test_repo_grouping_multiple_needs_per_repo",
     "file": "src/extensions/score_source_code_linker/tests/test_repo_source_link_integration.py",
-    "line": "299",
+    "line": "350",
     "result": "passed",
     "repo_name": null,
     "hash": null,
@@ -4132,7 +4160,7 @@
   {
     "name": "test_repo_source_link_integration__test_repo_cache_json_format",
     "file": "src/extensions/score_source_code_linker/tests/test_repo_source_link_integration.py",
-    "line": "332",
+    "line": "383",
     "result": "passed",
     "repo_name": null,
     "hash": null,
@@ -4146,7 +4174,7 @@
   {
     "name": "test_repo_source_link_integration__test_repo_cache_rebuilds_when_missing",
     "file": "src/extensions/score_source_code_linker/tests/test_repo_source_link_integration.py",
-    "line": "384",
+    "line": "435",
     "result": "passed",
     "repo_name": null,
     "hash": null,
@@ -4160,7 +4188,7 @@
   {
     "name": "test_repo_source_link_integration__test_repo_grouping_with_golden_file",
     "file": "src/extensions/score_source_code_linker/tests/test_repo_source_link_integration.py",
-    "line": "419",
+    "line": "470",
     "result": "passed",
     "repo_name": null,
     "hash": null,
@@ -4412,7 +4440,7 @@
   {
     "name": "test_source_code_link_integration__test_source_link_integration_ok",
     "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
-    "line": "513",
+    "line": "515",
     "result": "passed",
     "repo_name": null,
     "hash": null,
@@ -4426,7 +4454,7 @@
   {
     "name": "test_source_code_link_integration__test_source_link_integration_non_existent_id",
     "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
-    "line": "583",
+    "line": "578",
     "result": "passed",
     "repo_name": null,
     "hash": null,
