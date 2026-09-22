@@ -417,7 +417,17 @@
               "full_line": "# req-Id: tool_req__docs_common_attr_safety"
             }
           ],
-          "TestLinks": []
+          "TestLinks": [
+            {
+              "name": "test_rules_file_based__test_rst_files[attributes/test_common_attr_safety.rst]",
+              "file": "src/extensions/score_metamodel/tests/rst/attributes/test_common_attr_safety.rst",
+              "line": 16,
+              "need": "tool_req__docs_common_attr_safety",
+              "verify_type": "fully",
+              "result": "passed",
+              "result_text": ""
+            }
+          ]
         }
       },
       {
@@ -657,7 +667,17 @@
               "full_line": "# req-Id: tool_req__docs_common_attr_version"
             }
           ],
-          "TestLinks": []
+          "TestLinks": [
+            {
+              "name": "test_rules_file_based__test_rst_files[attributes/test_common_attr_version.rst]",
+              "file": "src/extensions/score_metamodel/tests/rst/attributes/test_common_attr_version.rst",
+              "line": 16,
+              "need": "tool_req__docs_common_attr_version",
+              "verify_type": "partially",
+              "result": "passed",
+              "result_text": ""
+            }
+          ]
         }
       },
       {
