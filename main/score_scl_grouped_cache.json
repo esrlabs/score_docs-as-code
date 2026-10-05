@@ -832,7 +832,7 @@
       "CodeLinks": [
         {
           "file": "src/extensions/score_metamodel/checks/check_options.py",
-          "line": 287,
+          "line": 297,
           "tag": "# req-Id:",
           "need": "tool_req__docs_req_attr_validity_consistency",
           "full_line": "# req-Id: tool_req__docs_req_attr_validity_consistency",
@@ -847,7 +847,7 @@
           "file": "src/extensions/score_metamodel/tests/rst/attributes/test_validity.rst",
           "line": 16,
           "need": "tool_req__docs_req_attr_validity_consistency",
-          "verify_type": "partially",
+          "verify_type": "fully",
           "result": "passed",
           "result_text": "",
           "repo_name": "local_repo",
@@ -1596,7 +1596,7 @@
           "file": "src/extensions/score_metamodel/tests/rst/attributes/test_validity.rst",
           "line": 16,
           "need": "tool_req__docs_req_attr_validity_correctness",
-          "verify_type": "partially",
+          "verify_type": "fully",
           "result": "passed",
           "result_text": "",
           "repo_name": "local_repo",
@@ -2691,20 +2691,7 @@
           "url": ""
         }
       ],
-      "TestLinks": [
-        {
-          "name": "test_rules_file_based__test_rst_files[graph/test_metamodel_graph.rst]",
-          "file": "src/extensions/score_metamodel/tests/rst/graph/test_metamodel_graph.rst",
-          "line": 15,
-          "need": "tool_req__docs_common_attr_safety_link_check",
-          "verify_type": "partially",
-          "result": "passed",
-          "result_text": "",
-          "repo_name": "local_repo",
-          "hash": "",
-          "url": ""
-        }
-      ]
+      "TestLinks": []
     }
   },
   {
@@ -3947,7 +3934,7 @@
     }
   },
   {
-    "need": "potential_tool_malfunction__docs_as_code__m2",
+    "need": "tool_req__docs_common_attr_safety_link_check[version==1]",
     "links": {
       "CodeLinks": [],
       "TestLinks": [
@@ -3955,7 +3942,7 @@
           "name": "test_rules_file_based__test_rst_files[graph/test_metamodel_graph.rst]",
           "file": "src/extensions/score_metamodel/tests/rst/graph/test_metamodel_graph.rst",
           "line": 15,
-          "need": "potential_tool_malfunction__docs_as_code__m2",
+          "need": "tool_req__docs_common_attr_safety_link_check[version==1]",
           "verify_type": "fully",
           "result": "passed",
           "result_text": "",
