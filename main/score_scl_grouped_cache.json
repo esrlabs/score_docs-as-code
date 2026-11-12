@@ -3632,46 +3632,6 @@
     }
   },
   {
-    "need": "tool_req__docs_common_attr_status_invalid[version==1]",
-    "links": {
-      "CodeLinks": [],
-      "TestLinks": [
-        {
-          "name": "test_rules_file_based__test_rst_files[options/test_invalid_skipped.rst]",
-          "file": "src/extensions/score_metamodel/tests/rst/options/test_invalid_skipped.rst",
-          "line": 16,
-          "need": "tool_req__docs_common_attr_status_invalid[version==1]",
-          "verify_type": "fully",
-          "result": "passed",
-          "result_text": "",
-          "repo_name": "local_repo",
-          "hash": "",
-          "url": ""
-        }
-      ]
-    }
-  },
-  {
-    "need": "tool_req__docs_saf_attr_fmea_failure_effect[version==1]",
-    "links": {
-      "CodeLinks": [],
-      "TestLinks": [
-        {
-          "name": "test_rules_file_based__test_rst_files[options/test_options_failure_effect.rst]",
-          "file": "src/extensions/score_metamodel/tests/rst/options/test_options_failure_effect.rst",
-          "line": 16,
-          "need": "tool_req__docs_saf_attr_fmea_failure_effect[version==1]",
-          "verify_type": "fully",
-          "result": "passed",
-          "result_text": "",
-          "repo_name": "local_repo",
-          "hash": "",
-          "url": ""
-        }
-      ]
-    }
-  },
-  {
     "need": "tool_req__docs_req_types[version==1]",
     "links": {
       "CodeLinks": [],
@@ -3679,18 +3639,6 @@
         {
           "name": "test_rules_file_based__test_rst_files[options/test_options_extra_option.rst]",
           "file": "src/extensions/score_metamodel/tests/rst/options/test_options_extra_option.rst",
-          "line": 16,
-          "need": "tool_req__docs_req_types[version==1]",
-          "verify_type": "partially",
-          "result": "passed",
-          "result_text": "",
-          "repo_name": "local_repo",
-          "hash": "",
-          "url": ""
-        },
-        {
-          "name": "test_rules_file_based__test_rst_files[options/gd_req_comp.rst]",
-          "file": "src/extensions/score_metamodel/tests/rst/options/gd_req_comp.rst",
           "line": 16,
           "need": "tool_req__docs_req_types[version==1]",
           "verify_type": "partially",
@@ -3711,41 +3659,13 @@
           "repo_name": "local_repo",
           "hash": "",
           "url": ""
-        }
-      ]
-    }
-  },
-  {
-    "need": "tool_req__docs_common_attr_security[version==1]",
-    "links": {
-      "CodeLinks": [],
-      "TestLinks": [
+        },
         {
-          "name": "test_rules_file_based__test_rst_files[options/test_options_common_attrs_security.rst]",
-          "file": "src/extensions/score_metamodel/tests/rst/options/test_options_common_attrs_security.rst",
-          "line": 15,
-          "need": "tool_req__docs_common_attr_security[version==1]",
-          "verify_type": "fully",
-          "result": "passed",
-          "result_text": "",
-          "repo_name": "local_repo",
-          "hash": "",
-          "url": ""
-        }
-      ]
-    }
-  },
-  {
-    "need": "tool_req__docs_common_attr_status[version==2]",
-    "links": {
-      "CodeLinks": [],
-      "TestLinks": [
-        {
-          "name": "test_rules_file_based__test_rst_files[options/test_options_common_attrs_status.rst]",
-          "file": "src/extensions/score_metamodel/tests/rst/options/test_options_common_attrs_status.rst",
-          "line": 15,
-          "need": "tool_req__docs_common_attr_status[version==2]",
-          "verify_type": "fully",
+          "name": "test_rules_file_based__test_rst_files[options/gd_req_comp.rst]",
+          "file": "src/extensions/score_metamodel/tests/rst/options/gd_req_comp.rst",
+          "line": 16,
+          "need": "tool_req__docs_req_types[version==1]",
+          "verify_type": "partially",
           "result": "passed",
           "result_text": "",
           "repo_name": "local_repo",
@@ -3848,15 +3768,75 @@
     }
   },
   {
-    "need": "tool_req__docs_saf_attrs_mitigated_by[version==1]",
+    "need": "tool_req__docs_common_attr_status[version==2]",
     "links": {
       "CodeLinks": [],
       "TestLinks": [
         {
-          "name": "test_rules_file_based__test_rst_files[safety/test_saf_mitigated_by.rst]",
-          "file": "src/extensions/score_metamodel/tests/rst/safety/test_saf_mitigated_by.rst",
+          "name": "test_rules_file_based__test_rst_files[options/test_options_common_attrs_status.rst]",
+          "file": "src/extensions/score_metamodel/tests/rst/options/test_options_common_attrs_status.rst",
           "line": 15,
-          "need": "tool_req__docs_saf_attrs_mitigated_by[version==1]",
+          "need": "tool_req__docs_common_attr_status[version==2]",
+          "verify_type": "fully",
+          "result": "passed",
+          "result_text": "",
+          "repo_name": "local_repo",
+          "hash": "",
+          "url": ""
+        }
+      ]
+    }
+  },
+  {
+    "need": "tool_req__docs_saf_attr_fmea_failure_effect[version==1]",
+    "links": {
+      "CodeLinks": [],
+      "TestLinks": [
+        {
+          "name": "test_rules_file_based__test_rst_files[options/test_options_failure_effect.rst]",
+          "file": "src/extensions/score_metamodel/tests/rst/options/test_options_failure_effect.rst",
+          "line": 16,
+          "need": "tool_req__docs_saf_attr_fmea_failure_effect[version==1]",
+          "verify_type": "fully",
+          "result": "passed",
+          "result_text": "",
+          "repo_name": "local_repo",
+          "hash": "",
+          "url": ""
+        }
+      ]
+    }
+  },
+  {
+    "need": "tool_req__docs_common_attr_status_invalid[version==1]",
+    "links": {
+      "CodeLinks": [],
+      "TestLinks": [
+        {
+          "name": "test_rules_file_based__test_rst_files[options/test_invalid_skipped.rst]",
+          "file": "src/extensions/score_metamodel/tests/rst/options/test_invalid_skipped.rst",
+          "line": 16,
+          "need": "tool_req__docs_common_attr_status_invalid[version==1]",
+          "verify_type": "fully",
+          "result": "passed",
+          "result_text": "",
+          "repo_name": "local_repo",
+          "hash": "",
+          "url": ""
+        }
+      ]
+    }
+  },
+  {
+    "need": "tool_req__docs_common_attr_security[version==1]",
+    "links": {
+      "CodeLinks": [],
+      "TestLinks": [
+        {
+          "name": "test_rules_file_based__test_rst_files[options/test_options_common_attrs_security.rst]",
+          "file": "src/extensions/score_metamodel/tests/rst/options/test_options_common_attrs_security.rst",
+          "line": 15,
+          "need": "tool_req__docs_common_attr_security[version==1]",
           "verify_type": "fully",
           "result": "passed",
           "result_text": "",
@@ -3928,6 +3908,26 @@
     }
   },
   {
+    "need": "tool_req__docs_saf_attrs_violates[version==2]",
+    "links": {
+      "CodeLinks": [],
+      "TestLinks": [
+        {
+          "name": "test_rules_file_based__test_rst_files[safety/test_saf_violates.rst]",
+          "file": "src/extensions/score_metamodel/tests/rst/safety/test_saf_violates.rst",
+          "line": 15,
+          "need": "tool_req__docs_saf_attrs_violates[version==2]",
+          "verify_type": "fully",
+          "result": "passed",
+          "result_text": "",
+          "repo_name": "local_repo",
+          "hash": "",
+          "url": ""
+        }
+      ]
+    }
+  },
+  {
     "need": "tool_req__docs_saf_types[version==2]",
     "links": {
       "CodeLinks": [],
@@ -3957,6 +3957,26 @@
           "file": "src/extensions/score_metamodel/tests/rst/safety/test_saf_types.rst",
           "line": 15,
           "need": "tool_req__docs_saf_attrs_mandatory[version==1]",
+          "verify_type": "fully",
+          "result": "passed",
+          "result_text": "",
+          "repo_name": "local_repo",
+          "hash": "",
+          "url": ""
+        }
+      ]
+    }
+  },
+  {
+    "need": "tool_req__docs_saf_attrs_mitigated_by[version==1]",
+    "links": {
+      "CodeLinks": [],
+      "TestLinks": [
+        {
+          "name": "test_rules_file_based__test_rst_files[safety/test_saf_mitigated_by.rst]",
+          "file": "src/extensions/score_metamodel/tests/rst/safety/test_saf_mitigated_by.rst",
+          "line": 15,
+          "need": "tool_req__docs_saf_attrs_mitigated_by[version==1]",
           "verify_type": "fully",
           "result": "passed",
           "result_text": "",
@@ -4048,26 +4068,6 @@
     }
   },
   {
-    "need": "tool_req__docs_saf_attrs_violates[version==2]",
-    "links": {
-      "CodeLinks": [],
-      "TestLinks": [
-        {
-          "name": "test_rules_file_based__test_rst_files[safety/test_saf_violates.rst]",
-          "file": "src/extensions/score_metamodel/tests/rst/safety/test_saf_violates.rst",
-          "line": 15,
-          "need": "tool_req__docs_saf_attrs_violates[version==2]",
-          "verify_type": "fully",
-          "result": "passed",
-          "result_text": "",
-          "repo_name": "local_repo",
-          "hash": "",
-          "url": ""
-        }
-      ]
-    }
-  },
-  {
     "need": "potential_tool_malfunction__docs_as_code__m1",
     "links": {
       "CodeLinks": [],
@@ -4112,15 +4112,15 @@
     }
   },
   {
-    "need": "tool_req__docs_common_attr_safety_link_check[version==1]",
+    "need": "tool_req__docs_req_link_satisfies_allowed[version==1]",
     "links": {
       "CodeLinks": [],
       "TestLinks": [
         {
-          "name": "test_rules_file_based__test_rst_files[graph/test_metamodel_graph.rst]",
-          "file": "src/extensions/score_metamodel/tests/rst/graph/test_metamodel_graph.rst",
-          "line": 15,
-          "need": "tool_req__docs_common_attr_safety_link_check[version==1]",
+          "name": "test_rules_file_based__test_rst_files[graph/test_req_link_satisfies.rst]",
+          "file": "src/extensions/score_metamodel/tests/rst/graph/test_req_link_satisfies.rst",
+          "line": 16,
+          "need": "tool_req__docs_req_link_satisfies_allowed[version==1]",
           "verify_type": "fully",
           "result": "passed",
           "result_text": "",
@@ -4152,26 +4152,6 @@
     }
   },
   {
-    "need": "tool_req__docs_req_link_covers_aou[version==1]",
-    "links": {
-      "CodeLinks": [],
-      "TestLinks": [
-        {
-          "name": "test_rules_file_based__test_rst_files[graph/test_req_link_covers_aou.rst]",
-          "file": "src/extensions/score_metamodel/tests/rst/graph/test_req_link_covers_aou.rst",
-          "line": 16,
-          "need": "tool_req__docs_req_link_covers_aou[version==1]",
-          "verify_type": "fully",
-          "result": "passed",
-          "result_text": "",
-          "repo_name": "local_repo",
-          "hash": "",
-          "url": ""
-        }
-      ]
-    }
-  },
-  {
     "need": "tool_req__docs_stdwp_types",
     "links": {
       "CodeLinks": [],
@@ -4182,46 +4162,6 @@
           "line": 16,
           "need": "tool_req__docs_stdwp_types",
           "verify_type": "partially",
-          "result": "passed",
-          "result_text": "",
-          "repo_name": "local_repo",
-          "hash": "",
-          "url": ""
-        }
-      ]
-    }
-  },
-  {
-    "need": "tool_req__docs_req_arch_link_safety_to_arch[version==2]",
-    "links": {
-      "CodeLinks": [],
-      "TestLinks": [
-        {
-          "name": "test_rules_file_based__test_rst_files[graph/test_arch_link_safety.rst]",
-          "file": "src/extensions/score_metamodel/tests/rst/graph/test_arch_link_safety.rst",
-          "line": 15,
-          "need": "tool_req__docs_req_arch_link_safety_to_arch[version==2]",
-          "verify_type": "fully",
-          "result": "passed",
-          "result_text": "",
-          "repo_name": "local_repo",
-          "hash": "",
-          "url": ""
-        }
-      ]
-    }
-  },
-  {
-    "need": "tool_req__docs_req_link_satisfies_allowed[version==1]",
-    "links": {
-      "CodeLinks": [],
-      "TestLinks": [
-        {
-          "name": "test_rules_file_based__test_rst_files[graph/test_req_link_satisfies.rst]",
-          "file": "src/extensions/score_metamodel/tests/rst/graph/test_req_link_satisfies.rst",
-          "line": 16,
-          "need": "tool_req__docs_req_link_satisfies_allowed[version==1]",
-          "verify_type": "fully",
           "result": "passed",
           "result_text": "",
           "repo_name": "local_repo",
@@ -4272,15 +4212,55 @@
     }
   },
   {
-    "need": "tool_req__docs_sec_attr_stride_threat_id[version==1]",
+    "need": "tool_req__docs_common_attr_safety_link_check[version==1]",
     "links": {
       "CodeLinks": [],
       "TestLinks": [
         {
-          "name": "test_rules_file_based__test_rst_files[security/test_sec_attr_stride_threat_id.rst]",
-          "file": "src/extensions/score_metamodel/tests/rst/security/test_sec_attr_stride_threat_id.rst",
+          "name": "test_rules_file_based__test_rst_files[graph/test_metamodel_graph.rst]",
+          "file": "src/extensions/score_metamodel/tests/rst/graph/test_metamodel_graph.rst",
           "line": 15,
-          "need": "tool_req__docs_sec_attr_stride_threat_id[version==1]",
+          "need": "tool_req__docs_common_attr_safety_link_check[version==1]",
+          "verify_type": "fully",
+          "result": "passed",
+          "result_text": "",
+          "repo_name": "local_repo",
+          "hash": "",
+          "url": ""
+        }
+      ]
+    }
+  },
+  {
+    "need": "tool_req__docs_req_arch_link_safety_to_arch[version==2]",
+    "links": {
+      "CodeLinks": [],
+      "TestLinks": [
+        {
+          "name": "test_rules_file_based__test_rst_files[graph/test_arch_link_safety.rst]",
+          "file": "src/extensions/score_metamodel/tests/rst/graph/test_arch_link_safety.rst",
+          "line": 15,
+          "need": "tool_req__docs_req_arch_link_safety_to_arch[version==2]",
+          "verify_type": "fully",
+          "result": "passed",
+          "result_text": "",
+          "repo_name": "local_repo",
+          "hash": "",
+          "url": ""
+        }
+      ]
+    }
+  },
+  {
+    "need": "tool_req__docs_req_link_covers_aou[version==1]",
+    "links": {
+      "CodeLinks": [],
+      "TestLinks": [
+        {
+          "name": "test_rules_file_based__test_rst_files[graph/test_req_link_covers_aou.rst]",
+          "file": "src/extensions/score_metamodel/tests/rst/graph/test_req_link_covers_aou.rst",
+          "line": 16,
+          "need": "tool_req__docs_req_link_covers_aou[version==1]",
           "verify_type": "fully",
           "result": "passed",
           "result_text": "",
@@ -4352,15 +4332,15 @@
     }
   },
   {
-    "need": "tool_req__docs_stdreq_types[version==1]",
+    "need": "tool_req__docs_sec_attr_stride_threat_id[version==1]",
     "links": {
       "CodeLinks": [],
       "TestLinks": [
         {
-          "name": "test_rules_file_based__test_rst_files[attributes/test_std_types.rst]",
-          "file": "src/extensions/score_metamodel/tests/rst/attributes/test_std_types.rst",
-          "line": 16,
-          "need": "tool_req__docs_stdreq_types[version==1]",
+          "name": "test_rules_file_based__test_rst_files[security/test_sec_attr_stride_threat_id.rst]",
+          "file": "src/extensions/score_metamodel/tests/rst/security/test_sec_attr_stride_threat_id.rst",
+          "line": 15,
+          "need": "tool_req__docs_sec_attr_stride_threat_id[version==1]",
           "verify_type": "fully",
           "result": "passed",
           "result_text": "",
@@ -4412,35 +4392,15 @@
     }
   },
   {
-    "need": "potential_tool_malfunction__docs_as_code__m4",
+    "need": "tool_req__docs_stdreq_types[version==1]",
     "links": {
       "CodeLinks": [],
       "TestLinks": [
         {
-          "name": "test_rules_file_based__test_rst_files[architecture/architecture_tests.rst]",
-          "file": "src/extensions/score_metamodel/tests/rst/architecture/architecture_tests.rst",
+          "name": "test_rules_file_based__test_rst_files[attributes/test_std_types.rst]",
+          "file": "src/extensions/score_metamodel/tests/rst/attributes/test_std_types.rst",
           "line": 16,
-          "need": "potential_tool_malfunction__docs_as_code__m4",
-          "verify_type": "fully",
-          "result": "passed",
-          "result_text": "",
-          "repo_name": "local_repo",
-          "hash": "",
-          "url": ""
-        }
-      ]
-    }
-  },
-  {
-    "need": "tool_req__arch_linkage_safety[version==3]",
-    "links": {
-      "CodeLinks": [],
-      "TestLinks": [
-        {
-          "name": "test_rules_file_based__test_rst_files[architecture/test_arch_linkage_safety.rst]",
-          "file": "src/extensions/score_metamodel/tests/rst/architecture/test_arch_linkage_safety.rst",
-          "line": 15,
-          "need": "tool_req__arch_linkage_safety[version==3]",
+          "need": "tool_req__docs_stdreq_types[version==1]",
           "verify_type": "fully",
           "result": "passed",
           "result_text": "",
@@ -4472,15 +4432,15 @@
     }
   },
   {
-    "need": "tool_req__docs_arch_link_fulfils_aou[version==3]",
+    "need": "tool_req__arch_linkage_safety[version==3]",
     "links": {
       "CodeLinks": [],
       "TestLinks": [
         {
-          "name": "test_rules_file_based__test_rst_files[architecture/test_arch_link_fulfils_aou.rst]",
-          "file": "src/extensions/score_metamodel/tests/rst/architecture/test_arch_link_fulfils_aou.rst",
+          "name": "test_rules_file_based__test_rst_files[architecture/test_arch_linkage_safety.rst]",
+          "file": "src/extensions/score_metamodel/tests/rst/architecture/test_arch_linkage_safety.rst",
           "line": 15,
-          "need": "tool_req__docs_arch_link_fulfils_aou[version==3]",
+          "need": "tool_req__arch_linkage_safety[version==3]",
           "verify_type": "fully",
           "result": "passed",
           "result_text": "",
@@ -4501,6 +4461,46 @@
           "file": "src/extensions/score_metamodel/tests/rst/architecture/test_arch_link_fulfils.rst",
           "line": 15,
           "need": "tool_req__docs_arch_link_fulfils[version==3]",
+          "verify_type": "fully",
+          "result": "passed",
+          "result_text": "",
+          "repo_name": "local_repo",
+          "hash": "",
+          "url": ""
+        }
+      ]
+    }
+  },
+  {
+    "need": "potential_tool_malfunction__docs_as_code__m4",
+    "links": {
+      "CodeLinks": [],
+      "TestLinks": [
+        {
+          "name": "test_rules_file_based__test_rst_files[architecture/architecture_tests.rst]",
+          "file": "src/extensions/score_metamodel/tests/rst/architecture/architecture_tests.rst",
+          "line": 16,
+          "need": "potential_tool_malfunction__docs_as_code__m4",
+          "verify_type": "fully",
+          "result": "passed",
+          "result_text": "",
+          "repo_name": "local_repo",
+          "hash": "",
+          "url": ""
+        }
+      ]
+    }
+  },
+  {
+    "need": "tool_req__docs_arch_link_fulfils_aou[version==3]",
+    "links": {
+      "CodeLinks": [],
+      "TestLinks": [
+        {
+          "name": "test_rules_file_based__test_rst_files[architecture/test_arch_link_fulfils_aou.rst]",
+          "file": "src/extensions/score_metamodel/tests/rst/architecture/test_arch_link_fulfils_aou.rst",
+          "line": 15,
+          "need": "tool_req__docs_arch_link_fulfils_aou[version==3]",
           "verify_type": "fully",
           "result": "passed",
           "result_text": "",
